@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/js_104_GhostKato/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/js_104_GhostKato/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_104_GhostKato/assets/vendor-ba8a5d49.js">
+    <link rel="stylesheet" href="/js_104_GhostKato/assets/vendor-a2ef179d.css">
+    <link rel="stylesheet" href="/js_104_GhostKato/assets/index-466d4720.css">
+  </head>
+  <body>
+    <div class="scroll-to-top">
+  <svg class="scroll-to-top-icon" width="60" height="60">
+    <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-up"></use>
+  </svg>
+</div>
+
+    <header class="header">
+  <div class="header-container container">
+    <nav class="header-navigation">
+      <a class="header-logo" href="">LLOYD<span class="logo-part">JEFFERSON.</span></a>
+      <ul class="navigation-list">
+        <li class="navigation-list-item"><a href="#about-me">About me</a></li>
+        <li class="navigation-list-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-list-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <label class="theme-switch">
+      <input type="checkbox" id="toggle-night-mode">
+      <span class="toggle-slider">
+        <span class="toggle-circle"></span>
+        <span class="elipse"></span>
+      </span>
+    </label>
+    <a class="order-project" href="#work-together">Order the project</a>
+    <button class="menu-btn" type="button" data-menu-open>
+      <svg class="menu-icon">
+        <use class="menu-link" href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-material-symbols-light_menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+    <main>
+      <section id="hero">
+  <div
+    class="hero-position container"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
+    <h1 class="hero-title" data-aos="fade-up">
+      <span class="hero-title-color">Hello, I am</span> Fullstack developer
+    </h1>
+
+    <picture
+      class="hero-picture"
+      data-aos="flip-right"
+      data-aos-duration="1000"
+    >
+      <source
+        media="(max-width: 767px )"
+        type="image/png"
+        srcset="/js_104_GhostKato/assets/hero-people-mobile-1x-59fbc9a7.png 1x, /js_104_GhostKato/assets/hero-people-mobile-2x-da320013.png 2x"
+      />
+      <source
+        media="(min-width: 768px )"
+        type="image/png"
+        srcset="/js_104_GhostKato/assets/hero-people-tablet-1x-5dc4c847.png 1x, /js_104_GhostKato/assets/hero-people-tablet-2x-26c12b41.png 2x"
+      />
+      <source
+        media="(min-width: 1280px )"
+        type="image/png"
+        srcset="/js_104_GhostKato/assets/hero-people-desktop-1x-41da4351.png 1x, /js_104_GhostKato/assets/hero-people-desktop-2x-7c213b3d.png 2x"
+      />
+      <img
+        src="/js_104_GhostKato/assets/hero-people-desktop-2x-7c213b3d.png"
+        class="picture"
+        alt="Human"
+        loading="lazy"
+        width="282"
+      />
+    </picture>
+  </div>
+
+  <div class="hero-second-container" data-aos="fade-up">
+    <div class="hero-container container">
+      <h2 class="hero-title-small" data-aos="fade-up">
+        I work with people all over the world to create
+        <span class="hero-paragraph-color">impressive</span> and
+        <span class="hero-paragraph-color">functional websites</span> that
+        reflect each client`s unique personality.
+      </h2>
+
+      <ul class="hero-media-list" data-aos="fade-up">
+        <li class="hero-media-item">
+          <a
+            class="hero-media-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="hero-media-item">
+          <a
+            class="hero-media-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-media-item">
+          <a
+            class="hero-media-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-media-item">
+          <a
+            class="hero-media-link"
+            href="https://github.com/GhostKato/project-group-3-js"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="about-me">
+  <div class="about-me-container container" data-aos="fade-up">
+    <div class="about-title-container">
+      <h2 class="about-title">
+        About <span class="about-title-span">me</span>
+      </h2>
+    </div>
+    <div class="about-bio-container" data-aos="fade">
+      <picture class="about-photo" data-aos="flip-left">
+        <source
+          srcset="/js_104_GhostKato/assets/myphoto-desktop-8519a896.jpg 1x, /js_104_GhostKato/assets/myphoto-desktop@2x-cfcd5e14.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/js_104_GhostKato/assets/myphoto-tablet-06c10276.jpg 1x, /js_104_GhostKato/assets/myphoto-tablet@2x-49922d6f.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/js_104_GhostKato/assets/myphoto-mobile-78082c2d.jpg 1x, /js_104_GhostKato/assets/myphoto-mobile@2x-d3fd767c.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="/js_104_GhostKato/assets/myphoto-mobile-78082c2d.jpg"
+          alt="My photo"
+          width="320"
+          height="374"
+        />
+      </picture>
+      <div class="about-bio" data-aos="fade-left">
+        <h3 class="about-me-title">Bio</h3>
+        <p class="about-bio-text">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="about-bio-text">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="about-me-portfolio">
+      <div class="about-education" data-aos="fade-up">
+        <h3 class="about-me-title">Education</h3>
+        <ul class="about-education-menu">
+          <li class="about-education-list">
+            <span
+              >2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York</span
+            >
+          </li>
+          <li class="about-education-list">
+            <span
+              >2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York</span
+            >
+          </li>
+          <li class="about-education-list">
+            <span
+              >2020 - 2022 / Advanced Blender Animation Techniques, Udemy</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="about-role" data-aos="fade-up">
+        <h3 class="about-me-title">Role</h3>
+        <ul class="about-role-menu">
+          <li class="about-role-list"><span>Frontend development</span></li>
+          <li class="about-role-list">
+            <span>HeadlessCMS, Wordpress</span>
+          </li>
+          <li class="about-role-list"><span>Blender (enjoy)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section ribbon">
+  <div class="tech-skills">
+    <div class="div-skills-list div-tech-dark">
+      <ul class="ul-tech-skills">
+        <li class="li-tech-skills tech-dark">HTML/CSS</li>
+        <li class="li-tech-skills tech-dark">JavaScript</li>
+        <li class="li-tech-skills tech-dark">React</li>
+        <li class="li-tech-skills tech-dark">Node. js</li>
+        <li class="li-tech-skills tech-dark">React Native</li>
+        <li class="li-tech-skills tech-dark">Typescript</li>
+      </ul>
+      <ul class="ul-tech-skills mg-left-20">
+        <li class="li-tech-skills tech-dark">HTML/CSS</li>
+        <li class="li-tech-skills tech-dark">JavaScript</li>
+        <li class="li-tech-skills tech-dark">React</li>
+        <li class="li-tech-skills tech-dark">Node. js</li>
+        <li class="li-tech-skills tech-dark">React Native</li>
+        <li class="li-tech-skills tech-dark">Typescript</li>
+      </ul>
+      <ul class="ul-tech-skills mg-left-20">
+        <li class="li-tech-skills tech-dark">HTML/CSS</li>
+        <li class="li-tech-skills tech-dark">JavaScript</li>
+        <li class="li-tech-skills tech-dark">React</li>
+        <li class="li-tech-skills tech-dark">Node. js</li>
+        <li class="li-tech-skills tech-dark">React Native</li>
+        <li class="li-tech-skills tech-dark">Typescript</li>
+      </ul>
+    </div>
+    <div class="div-skills-list-two div-tech-dark-two">
+      <ul class="ul-tech-skills-two">
+        <li class="li-tech-skills-two tech-dark-two">HTML/CSS</li>
+        <li class="li-tech-skills-two tech-dark-two">JavaScript</li>
+        <li class="li-tech-skills-two tech-dark-two">React</li>
+        <li class="li-tech-skills-two tech-dark-two">Node. js</li>
+        <li class="li-tech-skills-two tech-dark-two">React Native</li>
+        <li class="li-tech-skills-two tech-dark-two">Typescript</li>
+      </ul>
+      <ul class="ul-tech-skills-two mg-left-20">
+        <li class="li-tech-skills-two tech-dark-two">HTML/CSS</li>
+        <li class="li-tech-skills-two tech-dark-two">JavaScript</li>
+        <li class="li-tech-skills-two tech-dark-two">React</li>
+        <li class="li-tech-skills-two tech-dark-two">Node. js</li>
+        <li class="li-tech-skills-two tech-dark-two">React Native</li>
+        <li class="li-tech-skills-two tech-dark-two">Typescript</li>
+      </ul>
+      <ul class="ul-tech-skills-two mg-left-20">
+        <li class="li-tech-skills-two tech-dark-two">HTML/CSS</li>
+        <li class="li-tech-skills-two tech-dark-two">JavaScript</li>
+        <li class="li-tech-skills-two tech-dark-two">React</li>
+        <li class="li-tech-skills-two tech-dark-two">Node. js</li>
+        <li class="li-tech-skills-two tech-dark-two">React Native</li>
+        <li class="li-tech-skills-two tech-dark-two">Typescript</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="projects">
+  <div class="my-projects-container container">
+    <h2 class="my-projects-title">My<span> projects</span></h2>
+    <ul id="project-list">
+    </ul>
+    <button id="load-more" type="button">load more</button>
+  </div>
+</section>
+      <section class="benefits section">
+  <div class="container flex-wrap">
+    <div class="benefits change-them">
+      <h2 class="benefits-title">
+        <span class="benefits-span-title">Benefits</span> of working with me
+      </h2>
+      <div class="benefits-decor-img change-them"></div>
+      <ul class="benefits-list">
+        <li class="benefits-item flex-item">
+          <div class="flex-wraper">
+            <div class="benefits-wrap-icon">
+              <svg class="benefits-icon" width="24" height="24">
+                <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-user-01"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-subtitle">Expertise</h3>
+            <p class="benefits-text">
+              With extensive experience in development, I have a deep
+              understanding of programming and website development.
+            </p>
+          </div>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-wrap-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-message-chat-circle"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-subtitle">Communication</h3>
+          <p class="benefits-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="benefits-wrap-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-brush-01"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-subtitle">Art</h3>
+          <p class="benefits-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="benefits-wrap-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-hourglass-02"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-subtitle">Urgent execution</h3>
+          <p class="benefits-text text-last">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="faq-section section">
+  <div class="faq-container container">
+    <h2 class="section-title">
+      Frequently Asked <span class="section-title coloured">Questions</span>
+    </h2>
+    <ul class="accordion-container">
+      <li class="accordion-item active">
+        <div class="accordion-header">
+          <h3 class="faq-header">
+            What programming languages are most often used in your project?
+          </h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+          <h3 class="faq-header">What are the deadlines for the project?</h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content accordion-hover">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+          <h3 class="faq-header">What payment methods do you accept?</h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content accordion-hover">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+          <h3 class="faq-header">How can I contact you?</h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content accordion-hover">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+          <h3 class="faq-header">Do you provide advice or support?</h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content accordion-hover">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+          <h3 class="faq-header">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion-content accordion-hover">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="rewiev-container container">
+    <h2 class="title-review" data-aos="fade-up">Reviews</h2>
+    <div class="review-swiper swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+    </div>
+    <div class="buttons">
+      <div class="review-btn-container">
+        <button class="left-btn">
+          <svg class="menu-left-btn-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </button>
+        <button class="right-btn">
+          <svg class="menu-right-btn-icon" width="24" height="24">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+      <section id="work-together" class="section">
+  <div class="work-together-container container">
+    <h2 class="together-title">
+      let’s <span class="together-title-green">work together</span>
+    </h2>
+
+    <!-- Contacts -->
+
+    <div class="contacts-and-form" id="contacts">
+      <address class="together-contacts-container">
+        <p class="together-contacts-title" data-aos="fade-down">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="together-contacts-list">
+          <li class="together-contacts-item" data-aos="fade-right">
+            <svg class="together-svg" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-tel"></use>
+            </svg>
+
+            <a class="together-contacts-link" href="tel:+380904567890"
+              >+38 090 456 78 90</a
+            >
+          </li>
+
+          <li class="together-contacts-item" data-aos="fade-right">
+            <svg class="together-svg" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-email"></use>
+            </svg>
+
+            <a
+              class="together-contacts-link"
+              href="mailto:lloydjefferson@gmail.com"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+
+          <li class="together-contacts-item" data-aos="fade-right">
+            <svg class="together-svg" width="24" height="24">
+              <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-geo"></use>
+            </svg>
+
+            <a
+              class="together-contacts-link"
+              href="https://www.google.com/maps/place/Coney+Island+Beach/@40.5721397,-73.9794471,184m/data=!3m1!1e3!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c24434a1186c45:0x2db95f871281b5b5!8m2!3d40.5721302!4d-73.9793298!16s%2Fg%2F1q5ccgdql?entry=ttu"
+              target="_blank"
+              >USA, New York</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <!-- Form -->
+      <form class="together-form">
+        <label data-aos="fade-left">
+          <svg class="together-icon-ok" width="16" height="16">
+            <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-ep_success-filled"></use>
+          </svg>
+          <input
+            class="together-email"
+            type="email"
+            name="email"
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+        </label>
+        <p class="together-text-error">Invalid name, try again</p>
+        <label data-aos="fade-left">
+          <textarea class="together-text" placeholder="Message"></textarea>
+        </label>
+        <button class="together-button" type="submit" data-aos="fade-top">
+          Sеnd Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="border-top" id="footer">
+  <div class="footer-container container">
+    <div
+      class="footer-title-container"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+    >
+      <a class="footer-title" href=""
+        >Lloyd<span class="footer-title-color">Jefferson.</span></a
+      >
+
+      <ul
+        class="footer-media-list"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <li class="footer-media-item">
+          <a
+            class="footer-media-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-media-item">
+          <a
+            class="footer-media-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-media-item">
+          <a
+            class="footer-media-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-media-item">
+          <a
+            class="footer-media-link"
+            href="https://github.com/GhostKato/project-group-3-js"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <p class="footer-paragraph" data-aos="fade-down" data-aos-duration="1500">
+      <span>© Copyright 2024.</span> Made by LloydJefferson
+    </p>
+  </div>
+</footer>
+
+    <div class="mobile-container" data-menu>
+  <div class="mobile-padding">
+    <div class="mobile-header">
+      <a class="mobile-title" href=""
+        >Lloyd<span class="mobile-title-color">Jefferson.</span></a
+      >
+
+      <button class="mobile-modal-close" data-menu-close>
+        <svg class="mobile-modal-svg" width="24" height="24">
+          <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-main">
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu-list">
+            <a class="mobile-link scroll-to" href="#about-me">About me</a>
+          </li>
+          <li class="mobile-menu-list">
+            <a class="mobile-link scroll-to" href="#projects">Projects</a>
+          </li>
+          <li class="mobile-menu-list">
+            <a class="mobile-link scroll-to" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="mobile-main-btn scroll-to" href="#work-together"
+        >Order the project</a
+      >
+    </div>
+  </div>
+
+  <ul class="mobile-social">
+    <li class="mobile-social-list">
+      <a
+        class="mobile-link"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >Instagram</a
+      >
+    </li>
+    <li class="mobile-social-list">
+      <a
+        class="mobile-link"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >Telegram</a
+      >
+    </li>
+    <li class="mobile-social-list">
+      <a
+        class="mobile-link"
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >Linkedin</a
+      >
+    </li>
+    <li class="mobile-social-list">
+      <a
+        class="mobile-link"
+        href="https://github.com/GhostKato/project-group-3-js"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</div>
+
+    <div id="together-modal" class="together-modal">
+  <div class="together-modal-content">
+    <button class="together-modal-close">
+      <svg class="together-modal-svg" width="24" height="24">
+        <use href="/js_104_GhostKato/assets/icons-e7e34544.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h3 class="together-modal-title">
+      Thank you for your interest in cooperation!
+    </h3>
+    <p class="together-modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
+    
+  </body>
+</html>
